@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <meta name="author" content="GingerBrad Inc.">
+ 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <title></title>
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+	<link rel="manifest" href="site.webmanifest" />
+	<link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+	<link rel="icon" sizes="192x192" href="images/webapp-icon-192.png">
+	<link rel="apple-touch-icon-precomposed" href="images/webapp-icon-57.png"><!-- 57x57px -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/webapp-icon-72.png">
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/webapp-icon-76.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/webapp-icon-114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/webapp-icon-120.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/webapp-icon-144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/webapp-icon-152.png">
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/webapp-icon-180.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<script src="siteconfig.js"></script>
+	<script type="text/javascript">document.title=Title;</script>
+   </head>
+	
+
+<body oncopy="return false" oncut="return false" onpaste="return false">
+	<div class="content-container">
+		<div class="noselect">
+			<div class="div-table text-back">
+				<div class="div-table-row">
+					<div class=" div-table-col"><a href="/" class="back-button">&larr;</a></div>
+					<div id="Title" class="title div-table-col"> <script type="text/javascript">document.getElementById(CSSIDTitle).innerHTML=Title;</script></div>
+				</div>
+			</div>
+			<br>
+			<div id="content" class="content">
+				<div class="div-table-border">  
+					<div class="div-table">
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left text-function-power-3" align="center"><div class="text-cell"><div class="text-main-single">3,3 V</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"></div>
+							<div class="div-table-col div-table-col-control-left" align="center"></div>
+							<div class="div-table-col pins" class="pins" align="center"><img src="../images/pin_orange.png"></div>
+							<div class="div-table-col pins" class="pins" align="center"><img src="../images/pin_red.png"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right text-function-power-5" align="center"><div class="text-cell"><div class="text-main-single">5 V</div></div></div>
+						</div>
+
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left" align="center" id="CSSTextGPIO2"><div class="text-cell"><div class="text-main">GPIO 2</div><div class="text-sub">I2C Data (SDA)</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"><button id="MGPIO2" class=""></button></div>
+							<div class="div-table-col div-table-col-control-left" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO2" disabled >
+									<span class="slider round" id="CSSSwitchGPIO2"></span>
+								</label>
+							</div>
+							<div class="div-table-col pins" class="pins" align="center"><img src="../images/pin_pink.png"></div>
+							<div class="div-table-col pins" class="pins" align="center"><img src="../images/pin_red.png"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right text-function-power-5" align="center"><div class="text-cell"><div class="text-main-single">5 V</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left" align="center" id="CSSTextGPIO3"><div class="text-cell"><div class="text-main">GPIO 3</div><div class="text-sub">I2C Data (SCL)</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"><button id="MGPIO3" class=""></button></div>
+							<div class="div-table-col div-table-col-control-left" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO3" disabled >
+									<span class="slider round" id="CSSSwitchGPIO3"></span>
+								</label>
+							</div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_pink.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_black.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right text-function-ground" align="center"><div class="text-cell"><div class="text-main-single">Ground</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left" align="center" id="CSSTextGPIO4"><div class="text-cell"><div class="text-main-single">GPIO 4</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"><button id="MGPIO4" class=""></button></div>
+							<div class="div-table-col div-table-col-control-left" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO4" disabled >
+									<span class="slider round" id="CSSSwitchGPIO4"></span>
+								</label>
+							</div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_green.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_purple.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO14" disabled >
+									<span class="slider round" id="CSSSwitchGPIO14"></span>
+								</label>
+							</div>
+							<div class="div-table-col div-table-col-control-right" align="center"><button id="MGPIO14" class=""></button></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right" align="center" id="CSSTextGPIO14"><div class="text-cell"><div class="text-main">GPIO 14</div><div class="text-sub">UART Transmit</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left text-function-ground" align="center"><div class="text-cell"><div class="text-main-single">Ground</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"></div>
+							<div class="div-table-col div-table-col-control-left" align="center"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_black.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_purple.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO15" disabled >
+									<span class="slider round" id="CSSSwitchGPIO15"></span>
+								</label>
+							</div>
+							<div class="div-table-col div-table-col-control-right" align="center"><button id="MGPIO15" class=""></button></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right" align="center" id="CSSTextGPIO15"><div class="text-cell"><div class="text-main">GPIO 15</div><div class="text-sub">UART Receive</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left" align="center" id="CSSTextGPIO17"><div class="text-cell"><div class="text-main-single">GPIO 17</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"><button id="MGPIO17" class=""></button></div>
+							<div class="div-table-col div-table-col-control-left" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO17" disabled >
+									<span class="slider round" id="CSSSwitchGPIO17"></span>
+								</label>
+							</div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_green.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_green.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO18" disabled >
+									<span class="slider round" id="CSSSwitchGPIO18"></span>
+								</label>
+							</div>
+							<div class="div-table-col div-table-col-control-right" align="center"><button id="MGPIO18" class=""></button></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right" align="center" id="CSSTextGPIO18"><div class="text-cell"><div class="text-main-single">GPIO 18</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left" align="center" id="CSSTextGPIO27"><div class="text-cell"><div class="text-main-single">GPIO 27</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"><button id="MGPIO27"></button></div>
+							<div class="div-table-col div-table-col-control-left" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO27" disabled >
+									<span class="slider round" id="CSSSwitchGPIO27"></span>
+								</label>
+							</div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_green.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_black.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right text-function-ground" align="center"><div class="text-cell"><div class="text-main-single">Ground</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left" align="center" id="CSSTextGPIO22"><div class="text-cell"><div class="text-main-single">GPIO 22</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"><button id="MGPIO22" class=""></button></div>
+							<div class="div-table-col div-table-col-control-left" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO22" disabled >
+									<span class="slider round" id="CSSSwitchGPIO22"></span>
+								</label>
+							</div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_green.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_green.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO23" disabled >
+									<span class="slider round" id="CSSSwitchGPIO23"></span>
+								</label>
+							</div>
+							<div class="div-table-col div-table-col-control-right" align="center"><button id="MGPIO23" class=""></button></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right" align="center" id="CSSTextGPIO23"><div class="text-cell"><div class="text-main-single">GPIO 23</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left text-function-power-3" align="center"><div class="text-cell"><div class="text-main-single">3,3 V</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"></div>
+							<div class="div-table-col div-table-col-control-left" align="center"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_orange.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_green.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO24" disabled >
+									<span class="slider round" id="CSSSwitchGPIO24"></span>
+								</label>
+							</div>
+							<div class="div-table-col div-table-col-control-right" align="center"><button id="MGPIO24" class=""></button></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right" align="center" id="CSSTextGPIO24"><div class="text-cell"><div class="text-main-single">GPIO 24</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left" align="center" id="CSSTextGPIO10"><div class="text-cell"><div class="text-main">GPIO 10</div><div class="text-sub">SPI0 MOSI</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"><button id="MGPIO10" class=""></button></div>
+							<div class="div-table-col div-table-col-control-left" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO10" disabled >
+									<span class="slider round" id="CSSSwitchGPIO10"></span>
+								</label>
+							</div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_blue.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_black.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right text-function-ground" align="center"><div class="text-cell"><div class="text-main-single">Ground</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left" align="center" id="CSSTextGPIO9"><div class="text-cell"><div class="text-main">GPIO 9</div><div class="text-sub">SPI0 MISO</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"><button id="MGPIO9" class=""></button></div>
+							<div class="div-table-col div-table-col-control-left" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO9" disabled >
+									<span class="slider round" id="CSSSwitchGPIO9"></span>
+								</label>
+							</div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_blue.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_green.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO25" disabled >
+									<span class="slider round" id="CSSSwitchGPIO25"></span>
+								</label>
+							</div>
+							<div class="div-table-col div-table-col-control-right" align="center"><button id="MGPIO25" class=""></button></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right" align="center" id="CSSTextGPIO25"><div class="text-cell"><div class="text-main-single">GPIO 25</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left" align="center" id="CSSTextGPIO11"><div class="text-cell"><div class="text-main">GPIO 11</div><div class="text-sub">SPI0 SCLK</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"><button id="MGPIO11" class=""></button></div>
+							<div class="div-table-col div-table-col-control-left" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO11" disabled >
+									<span class="slider round" id="CSSSwitchGPIO11"></span>
+								</label>
+							</div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_blue.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_blue.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO8" disabled >
+									<span class="slider round" id="CSSSwitchGPIO8"></span>
+								</label>
+							</div>
+							<div class="div-table-col div-table-col-control-right" align="center"><button id="MGPIO8" class=""></button></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right" align="center" id="CSSTextGPIO8"><div class="text-cell"><div class="text-main">GPIO 8</div><div class="text-sub">SPI0 CE0</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left text-function-ground" align="center"><div class="text-cell"><div class="text-main-single">Ground</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"></div>
+							<div class="div-table-col div-table-col-control-left" align="center"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_black.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_blue.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO7" disabled >
+									<span class="slider round" id="CSSSwitchGPIO7"></span>
+								</label>
+							</div>
+							<div class="div-table-col div-table-col-control-right" align="center"><button id="MGPIO7" class=""></button></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right" align="center" id="CSSTextGPIO7"><div class="text-cell"><div class="text-main">GPIO 7</div><div class="text-sub">SPI0 CE1</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left text-function-eeprom" align="center"><div class="text-cell"><div class="text-main">ID SD</div><div class="text-sub text-small">I2C ID EEPROM</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"></div>
+							<div class="div-table-col div-table-col-control-left" align="center"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_yellow.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_yellow.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right text-function-eeprom" align="center"><div class="text-cell"><div class="text-main">ID SC</div><div class="text-sub text-small">I2C ID EEPROM</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left" align="center" id="CSSTextGPIO5"><div class="text-cell"><div class="text-main-single">GPIO 5</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"><button id="MGPIO5" class=""></button></div>
+							<div class="div-table-col div-table-col-control-left" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO5" disabled >
+									<span class="slider round" id="CSSSwitchGPIO5"></span>
+								</label>
+							</div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_green.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_black.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right text-function-ground" align="center"><div class="text-cell"><div class="text-main-single">Ground</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left" align="center" id="CSSTextGPIO6"><div class="text-cell"><div class="text-main-single">GPIO 6</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"><button id="MGPIO6" class=""></button></div>
+							<div class="div-table-col div-table-col-control-left" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO6" disabled >
+									<span class="slider round" id="CSSSwitchGPIO6"></span>
+								</label>
+							</div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_green.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_green.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO12" disabled >
+									<span class="slider round" id="CSSSwitchGPIO12"></span>
+								</label>
+							</div>
+							<div class="div-table-col div-table-col-control-right" align="center"><button id="MGPIO12" class=""></button></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right" align="center" id="CSSTextGPIO12"><div class="text-cell"><div class="text-main-single">GPIO 12</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left" align="center" id="CSSTextGPIO13"><div class="text-cell"><div class="text-main-single">GPIO 13</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"><button id="MGPIO13" class=""></button></div>
+							<div class="div-table-col div-table-col-control-left" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO13" disabled >
+									<span class="slider round" id="CSSSwitchGPIO13"></span>
+								</label>
+							</div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_green.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_black.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-control-right" align="center"></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right text-function-ground" align="center"><div class="text-cell"><div class="text-main-single">Ground</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left" align="center" id="CSSTextGPIO19"><div class="text-cell"><div class="text-main">GPIO 19</div><div class="text-sub">SPI1 MISO</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"><button id="MGPIO19" class=""></button></div>
+							<div class="div-table-col div-table-col-control-left" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO19" disabled >
+									<span class="slider round" id="CSSSwitchGPIO19"></span>
+								</label>
+							</div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_blue.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_green.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO16" disabled >
+									<span class="slider round" id="CSSSwitchGPIO16"></span>
+								</label>
+							</div>
+							<div class="div-table-col div-table-col-control-right" align="center"><button id="MGPIO16" class=""></button></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right" align="center" id="CSSTextGPIO16"><div class="text-cell"><div class="text-main-single">GPIO 16</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left" align="center" id="CSSTextGPIO26"><div class="text-cell"><div class="text-main-single">GPIO 26</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"><button id="MGPIO26" class=""></button></div>
+							<div class="div-table-col div-table-col-control-left" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO26" disabled >
+									<span class="slider round" id="CSSSwitchGPIO26"></span>
+								</label>
+							</div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_green.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_blue.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO20" disabled >
+									<span class="slider round" id="CSSSwitchGPIO20"></span>
+								</label>
+							</div>
+							<div class="div-table-col div-table-col-control-right" align="center"><button id="MGPIO20" class=""></button></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right" align="center" id="CSSTextGPIO20"><div class="text-cell"><div class="text-main">GPIO 20</div><div class="text-sub">SPI1 MOSI</div></div></div>
+						</div>
+						<div class="div-table-row">
+							<div class="div-table-col div-table-col-text-left div-table-col-border-left text-function-ground" align="center"><div class="text-cell"><div class="text-main-single">Ground</div></div></div>
+							<div class="div-table-col div-table-col-control-left" align="center"></div>
+							<div class="div-table-col div-table-col-control-left" align="center"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_black.png" height="30"></div>
+							<div class="div-table-col pins" align="center"><img src="../images/pin_blue.png" height="30"></div>
+							<div class="div-table-col div-table-col-control-right" align="center">
+								<label class="switch">
+									<input type="checkbox" id="GPIO21" disabled >
+									<span class="slider round" id="CSSSwitchGPIO21"></span>
+								</label>
+							</div>
+							<div class="div-table-col div-table-col-control-right" align="center"><button id="MGPIO21" class=""></button></div>
+							<div class="div-table-col div-table-col-text-right div-table-col-border-right" align="center" id="CSSTextGPIO21"><div class="text-cell"><div class="text-main">GPIO 21</div><div class="text-sub">SPI1 SCLK</div></div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html> 
