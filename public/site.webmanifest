@@ -1,7 +1,7 @@
 {
   "display": "standalone",
-  "short_name": "GPIO WebInterface",
-  "name": "Raspberry Pi GPIO WebInterface",
+  "short_name": "GPIO Server",
+  "name": "Raspberry Pi GPIO Server",
   "start_url": "index.html",
   "theme_color": "#000000",
   "background_color": "#ffffff",
