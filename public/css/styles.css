@@ -1,0 +1,577 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --ColorDisabled: .3;
+  --ColorDisabledSlider: .6;
+  --ColorDisabledReserved: 1;
+  --ColorDefault: #2196F3;
+  --ColorDefaultDisabled: hsl(from var(--ColorDefault) h s l / var(--ColorDisabled));
+  --ColorBlack: #000000;
+  --ColorBlackDisabled: hsl(from var(--ColorBlack) h s l / var(--ColorDisabled));
+  --ColorBlue: #3f5bb5;
+  --ColorBlueDisabled: hsl(from var(--ColorBlue) h s l / var(--ColorDisabled));
+  --ColorGreen: #016e01;
+  --ColorGreenDisabled: hsl(from var(--ColorGreen) h s l / var(--ColorDisabled));
+  --ColorOrange: #d97101;
+  --ColorOrangeDisabled: hsl(from var(--ColorOrange) h s l / var(--ColorDisabled));
+  --ColorPink: #b700be;
+  --ColorPinkDisabled: hsl(from var(--ColorPink) h s l / var(--ColorDisabled));
+  --ColorPurple: #8730e9;
+  --ColorPurpleDisabled: hsl(from var(--ColorPurple) h s l / var(--ColorDisabled));
+  --ColorRed: #a60000;
+  --ColorRedDisabled: hsl(from var(--ColorRed) h s l / var(--ColorDisabled));
+  --ColorYellow: #ffea01;
+  --ColorYellowDisabled: hsl(from var(--ColorYellow) h s l / var(--ColorDisabled));
+  --ColorSlider: #ffffff;
+  --ColorSliderDisabled: hsl(from var(--ColorSlider) h s l / var(--ColorDisabledSlider));
+  --ColorSliderBack: #ccc;
+  --ColorSliderBackDisabled: hsl(from var(--ColorSliderBack) h s l / var(--ColorDisabled));
+  --ColorReservedBlack: hsl(from var(--ColorBlack) h s l / var(--ColorDisabledReserved));
+  --ColorReservedOrange: hsl(from var(--ColorOrange) h s l / var(--ColorDisabledReserved));
+  --ColorReservedRed: hsl(from var(--ColorRed) h s l / var(--ColorDisabledReserved));
+  --ColorReservedYellow: hsl(from var(--ColorYellow) h s l / var(--ColorDisabledReserved));
+}
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+		supported by Chrome, Edge, Opera and Firefox */
+}
+
+.TextCenter {
+  text-align: center;
+}
+
+
+/******** Switch sliders style ******/	
+        
+	.switch {
+		position: relative;
+		display: inline-block;
+		width: 30px;
+		height: 20px;
+	
+	-webkit-tap-highlight-color: transparent; /* for removing the highlight 
+		*This only works with certain web browser but useful for Safari and 
+		* chrome on mobile touch screens*/
+
+	
+	}
+
+	.switch input { 
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+
+	.slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: var(--ColorSliderBack);
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+
+	.slider:before {
+		position: absolute;
+		content: "";
+		height: 12px;
+		width: 12px;
+		left: 4px;
+		bottom: 4px;
+		background-color: var(--ColorSlider);
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+
+input:checked + .switchColorDefault {
+	background-color: var(--ColorDefault);
+}
+
+input:checked + .switchColorDefaultDisabled {
+	background-color: var(--ColorDefaultDisabled);
+}
+
+input:checked + .switchColorPink {
+	background-color: var(--ColorPink);
+}
+
+input:checked + .switchColorPinkDisabled {
+	background-color: var(--ColorPinkDisabled);
+}
+
+input:checked + .switchColorPurple {
+	background-color: var(--ColorPurple);
+}
+
+input:checked + .switchColorPurpleDisabled {
+	background-color: var(--ColorPurpleDisabled);
+}
+
+input:checked + .switchColorYellow {
+	background-color: var(--ColorYellow);
+}
+
+input:checked + .switchColorYellowDisabled {
+	background-color: var(--ColorYellowDisabled);
+}
+
+input:checked + .switchColorBlack {
+	background-color: var(--ColorBlack);
+}
+
+input:checked + .switchColorBlackDisabled {
+	background-color: var(--ColorBlackDisabled);
+}
+
+input:checked + .switchColorOrange {
+	background-color: var(--ColorOrange);
+}
+
+input:checked + .switchColorOrangeDisabled {
+	background-color: var(--ColorOrangeDisabled);
+}
+
+input:checked + .switchColorBlue {
+	background-color: var(--ColorBlue);
+}
+
+input:checked + .switchColorBlueDisabled {
+	background-color: var(--ColorBlueDisabled);
+}
+
+input:checked + .switchColorRed {
+	background-color: var(--ColorRed);
+}
+
+input:checked + .switchColorRedDisabled {
+	background-color: var(--ColorRedDisabled);
+}
+
+input:checked + .switchColorGreen {
+	background-color: var(--ColorGreen);
+}
+
+input:checked + .switchColorGreenDisabled {
+	background-color: var(--ColorGreenDisabled);
+}
+
+	input:focus + .slider {
+		box-shadow: 0 0 1px #2196F3;
+	}
+
+	input:checked + .slider:before {
+		-webkit-transform: translateX(10px);
+		-ms-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+
+	/* Rounded sliders */
+	.slider.round {
+		border-radius: 5px;
+	}
+
+	.slider.round:before {
+		border-radius: 3px;
+	}	
+
+	.slider.disabled {
+		border-radius: 5px;
+		pointer-events: none;
+		background-color: var(--ColorSliderBackDisabled);
+	}
+
+	.slider.disabled:before {
+		background-color: var(--ColorSliderDisabled);
+		pointer-events: none;
+	}	
+	
+/******** Button style ******/	
+button { 
+
+min-width: 20px;
+width: auto;
+height: 20px; 
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+color: black;
+background-color: #eeeeeeee;
+#margin: 10px;
+border-radius: 5px;
+box-shadow: inset 2px 2px 10px 2px #999999;
+text-shadow: 1px 1px 0px grey;
+text-align: center;
+padding: 5px;  /* iOS text is not centered unless you set padding to zero */
+
+
+/* display: inline-block; */
+border: 1px solid black;
+cursor: pointer; /*changes cursor to hand symbol when you hoover*/
+
+-webkit-tap-highlight-color: transparent; /* for removing the highlight 
+		*This only works with certain web browser but useful for Safari and 
+		* chrome on mobile touch screens*/
+	
+} 
+
+button:active {
+	color: red;
+	background-color: #ffffff;
+	border-radius: 15px;
+	box-shadow: inset 2px 2px 10px 2px #999999;
+	text-shadow: 1px 1px 0px grey;
+	border: 1px solid red;
+}
+
+button.disabled { 
+
+/*max-width: 20%; */
+min-width: 20px;
+width: auto;
+height: 20px; 
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+color: #cccccc !important;
+background-color: #ffffff;
+#margin: 10px;
+border-radius: 5px;
+box-shadow: inset 2px 2px 10px 2px #cccccc;
+text-shadow: 1px 1px 0px grey;
+text-align: center;
+padding: 5px;  /* iOS text is not centered unless you set padding to zero */
+pointer-events: none;
+
+border: 1px solid #cccccc !important;
+cursor: pointer; /*changes cursor to hand symbol when you hoover*/
+
+-webkit-tap-highlight-color: transparent; /* for removing the highlight 
+		*This only works with certain web browser but useful for Safari and 
+		* chrome on mobile touch screens*/
+	
+} 
+
+button:active.disabled  {
+	color: red;
+	background-color: #ffffff;
+	box-shadow: inset 2px 2px 10px 2px #999999;
+	text-shadow: 1px 1px 0px grey;
+	border: 1px solid #cccccc !important;
+	pointer-events: none;
+}
+
+/* The following prevents chrome from putting a box around the button
+ * after selecting it 
+ */
+button:focus {
+    outline: 0;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active {
+  background-color: #fff;
+  color: red;
+}
+
+.disabled {
+	color: #cccccc !important;
+}
+
+
+.title {
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.pinPurple {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorPurple);
+}
+
+.pinPurpleDisabled {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorPurpleDisabled);
+}
+
+.pinPink {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorPink);
+}
+
+.pinPinkDisabled {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorPinkDisabled);
+}
+
+.pinYellow {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorReservedYellow);
+}
+
+.pinYellowDisabled {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorYellowDisabled);
+}
+
+.pinBlack {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorReservedBlack);
+}
+
+.pinBlackDisabled {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorBlackDisabled);
+}
+
+.pinOrange {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorReservedOrange);
+}
+
+.pinOrangeDisabled {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorOrangeDisabled);
+}
+
+.pinBlue {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorBlue);
+}
+
+.pinBlueDisabled {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorBlueDisabled);
+}
+
+.pinRed {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorReservedRed);
+}
+
+.pinRedDisabled {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorRedDisabled);
+}
+
+.pinGreen {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorGreen);
+}
+
+.pinGreenDisabled {
+	background-image: url("/images/pin.png");
+	background-color: var(--ColorGreenDisabled);
+}
+
+.div-table-border {
+	margin: 10px;
+	/* background-image: url("/images/RPiLogo.png"); */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.div-table {
+    width: auto;         
+    padding: 0px;
+}
+.div-table-row {
+    width: auto;
+    clear: both;
+    padding: 0px;
+}
+.div-table-col {
+    float: left; /* fix for  buggy browsers */
+    height: 30px;
+	padding-top: 5px;
+}
+
+.div-table-col-border-left {
+	padding-left: 5px;
+}
+
+.div-table-col-text-left {
+    width: 73px;  
+	padding-right: 10px;
+}
+.div-table-col-control-left {
+    width: 40px;  
+	padding-right: 10px;
+	padding-top: 6px;
+}
+
+.div-table-col-border-right {
+	padding-right: 5px;
+}
+
+.div-table-col-text-right {
+    width: 73px;  
+	padding-left: 10px;
+}
+.div-table-col-control-right {
+    width: 40px;  
+	padding-left: 10px;
+	padding-top: 6px;
+}
+
+.div-table-col-slider {
+    width: 30px;  
+ 	padding-right: 10px;
+}
+
+.div-table-col-left {
+    width: 50px;      */   
+    padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+}
+
+.div-table-col.pins {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-top: 0px !important;
+	width: 30px !important;
+}
+
+.text-cell {
+	padding: 0px;
+	display: block;
+	height: 25px;
+}
+
+.text-main {
+	font-weight: bold;
+	font-size: 14px;
+	height: 15px;
+	padding-top: 0px;
+}
+
+.text-main-single {
+	font-weight: bold;
+	font-size: 14px;
+	height: 25px;
+	padding-top: 3px;*/
+}
+
+.text-sub {
+	font-size: 8px;
+	height: 10px;
+	padding-top: 1px;
+}
+.text-small {
+	font-size: 7px !important;
+}
+
+.text-function-power-3 {
+	color: #b88020 !important;
+}
+
+.text-function-power-5 {
+	color: #b55c5c !important;
+}
+
+.text-function-ground {
+	color: #808080 !important;
+}
+
+
+.text-function-eeprom {
+	color: #c5a31d !important;
+}
+
+.text-back {
+	padding: 15px;
+	font-weight: bold;
+	font-size: 20px;
+}
+a.text-back {
+	text-decoration:none;
+	color: #0000ff;
+}
+a:hover.text-back {
+	text-decoration:none;
+	color: #ff0000;
+}
+
+.start-page-subtitle {
+	font-weight: bold;
+	padding: 15px;
+}
+
+.start-page-row {
+	padding: 15px;
+	display: flex;
+}
+
+.start-page-col {
+    float: left; /* fix for  buggy browsers */
+    height: auto !important;
+	padding-top: 5px;
+}
+
+.start-page-button-cell-container {
+	position: relative;
+    height: auto;
+}
+.start-page-button-cell {
+	padding-right: 15px;
+	width: 100px;
+	height: 100%;
+	
+}
+
+.start-page-description-cell {
+	padding-left: 15px;
+	width: auto;
+	font-size: 16px;
+}
+
+a.start-page-button {
+    padding: 5px 10px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: buttontext;
+    background-color: buttonface;
+    text-decoration: none;
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+}
+
+a.back-button {
+    padding: 5px 10px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: buttontext;
+    background-color: buttonface;
+    text-decoration: none;
+}
+
+.content {
+	display: none;
+}
+
+.content-container {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
