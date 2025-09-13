@@ -1,0 +1,1 @@
+var CPUTemperature = "RPi CPU: 49.4°C";

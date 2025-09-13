@@ -1,0 +1,80 @@
+:root {
+	
+/* Colors */
+  --ColorWhite: #ffffff;
+  --ColorBlack: #000000;
+  --ColorGray: #646464;
+  --ColorBlue: #3f5bb5;
+  --ColorOrange: #d97101;
+  --ColorGreen: #016e01;
+  --ColorPink: #b700be;
+  --ColorPurple: #8730e9;
+  --ColorRed: #a60000;
+  --ColorYellow: #ffea01;
+  --ColorDefault: #2196F3;
+  --ColorDefaultHoover: #1b6fb2;
+  --ColorDefaultHooverText: #ffffff;
+  --ColorDefaultTitleLight: #1a476a;
+  --ColorDefaultTitleDark: #2196F3;
+  --ColorDisabled: #cccccc;
+  --ColorTextFunctionPower3: #b88020;
+  --ColorTextFunctionPower5: #b55c5c;
+  --ColorTextFunctionGround: #808080;
+  --ColorTextFunctionEEPROM: #c5a31d;
+  --ColorSlider: #ffffff;
+  --ColorSliderBack: #ccc;
+  --ColorSliderDisabledBorder: #cccccc;
+  --ColorMButtonText: #000000;
+  --ColorMButtonBackground: #eeeeeeee;
+  --ColorMButtonBoxShadow: #999999;
+  --ColorMButtonTextShadow: gray;
+  --ColorMButtonBorder: #000000;
+  --ColorMButtonActiveText: #ff0000;
+  --ColorMButtonActiveBoxShadow: #999999;
+  --ColorMButtonActiveTextShadow: gray;
+  --ColorMButtonActiveBorder: #ff0000;
+  --ColorMButtonDisabledText: #cccccc;
+  --ColorMButtonDisabledBackground: #eeeeeeee;
+  --ColorMButtonDisabledBoxShadow: #cccccc;
+  --ColorMButtonDisabledTextShadow: gray;
+  --ColorMButtonDisabledBorder: #cccccc;
+  --ColorMButtonDisabledActiveText: #ff0000;
+  --ColorMButtonDisabledActiveBoxShadow: #999999;
+  --ColorMButtonDisabledActiveTextShadow: gray;
+  --ColorMButtonDisabledActiveBorder: #ff0000;
+
+/* Dark/Light Mode Settings */
+  --ColorBackground: var(--ColorWhite);
+  --ColorText: var(--ColorBlack);
+  --ColorDefaultTitle: var(--ColorDefaultTitleLight);
+  --ColorDisabledTransperent: .3;
+  --ColorDisabledSlider: .6;
+  --ColorDisabledReserved: 1;
+  
+  
+/* Don't Touch! */
+  --ImagePin:;
+  --ImagePinDisabled:;
+  --ImageBG:;
+  --ImageBGOpacity:;
+  --ImageBGMinHeight:;
+  --ImageLoading:;
+  --ColorDefaultDisabled: hsl(from var(--ColorDefault) h s l / var(--ColorDisabledTransperent));
+  --ColorDefaultButton: var(--ColorDefault);
+  --ColorDefaultButtonHoover: var(--ColorDefaultHoover);
+  --ColorDefaultButtonHooverText: var(--ColorDefaultHooverText);
+  --ColorBlackDisabled: hsl(from var(--ColorBlack) h s l / var(--ColorDisabledTransperent));
+  --ColorBlueDisabled: hsl(from var(--ColorBlue) h s l / var(--ColorDisabledTransperent));
+  --ColorGreenDisabled: hsl(from var(--ColorGreen) h s l / var(--ColorDisabledTransperent));
+  --ColorOrangeDisabled: hsl(from var(--ColorOrange) h s l / var(--ColorDisabledTransperent));
+  --ColorPinkDisabled: hsl(from var(--ColorPink) h s l / var(--ColorDisabledTransperent));
+  --ColorPurpleDisabled: hsl(from var(--ColorPurple) h s l / var(--ColorDisabledTransperent));
+  --ColorRedDisabled: hsl(from var(--ColorRed) h s l / var(--ColorDisabledTransperent));
+  --ColorYellowDisabled: hsl(from var(--ColorYellow) h s l / var(--ColorDisabledTransperent));
+  --ColorSliderDisabled: hsl(from var(--ColorSlider) h s l / var(--ColorDisabledSlider));
+  --ColorSliderBackDisabled: hsl(from var(--ColorSliderBack) h s l / var(--ColorDisabledTransperent));
+  --ColorReservedBlack: hsl(from var(--ColorBlack) h s l / var(--ColorDisabledReserved));
+  --ColorReservedOrange: hsl(from var(--ColorOrange) h s l / var(--ColorDisabledReserved));
+  --ColorReservedRed: hsl(from var(--ColorRed) h s l / var(--ColorDisabledReserved));
+  --ColorReservedYellow: hsl(from var(--ColorYellow) h s l / var(--ColorDisabledReserved));
+}
