@@ -115,7 +115,7 @@ if (GPIOEnabled[27] === 1) { GPIOvalue[27] = 0; } // Turn off GPIO 27 by default
 /*<#####################################################################>*/
 
 var GPIOName     = "GPIO";  // See siteconfig.js - has to be the same!
-var PIONameT     = "TGPIO"; // See siteconfig.js - has to be the same!
+var GPIONameT    = "TGPIO"; // See siteconfig.js - has to be the same!
 var ServerConfig = "public/js/serverConfig.js";
 var TempState    = "public/js/tempState.js";
 
