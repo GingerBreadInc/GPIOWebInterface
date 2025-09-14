@@ -104,3 +104,8 @@ sudo systemctl start gpiowebinterface.service
 sudo systemctl status gpiowebinterface.service
 sudo systemctl enable gpiowebinterface.service
 ```
+14. Cleanup
+```bash
+cd ~
+rm -rf downloads/*
+```
