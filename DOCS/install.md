@@ -3,19 +3,15 @@ All you need is a Raspberry Pi 3 and a fresh SD-Card with Raspberry Pi OS Lite 6
 
 1. Update System
 ```bash
-sudo apt update
-sudo apt upgrade -y
-sudo apt dist-upgrade -y
+sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
 ```
 2. Edit Raspi-Config
 ```bash
-sudo raspi-config nonint do_expand_rootfs
-sudo reboot
+sudo raspi-config nonint do_expand_rootfs && sudo reboot
 ```
 3. Enable Remote GPIO
 ```bash
-sudo systemctl enable pigpiod
-sudo systemctl start pigpiod
+sudo systemctl enable pigpiod && sudo systemctl start pigpiod
 ```
 4. Prepare Installation
 ```bash
