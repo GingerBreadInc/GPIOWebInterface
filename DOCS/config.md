@@ -161,33 +161,32 @@ Projects[PID]["ShowTemperature"]     = 1;      // Enable (1) or Disable (0) Show
 // You can really enable/disable GPIOs for processing in the 'webserver.js',
 // its important when you use a HAT like GeekWorm KVM-A3 or something else.
   
-Projects[PID]["GPIOEnabled"]         = {};
-Projects[PID]["GPIOEnabled"][2]      = 1; // Enable (1) or Disable (0) GPIO pin 3 for processing
-Projects[PID]["GPIOEnabled"][3]      = 1; // Enable (1) or Disable (0) GPIO pin 3 for processing
-Projects[PID]["GPIOEnabled"][4]      = 1; // Enable (1) or Disable (0) GPIO pin 4 for processing
-Projects[PID]["GPIOEnabled"][5]      = 1; // Enable (1) or Disable (0) GPIO pin 5 for processing
-Projects[PID]["GPIOEnabled"][6]      = 1; // Enable (1) or Disable (0) GPIO pin 6 for processing
-Projects[PID]["GPIOEnabled"][7]      = 1; // Enable (1) or Disable (0) GPIO pin 7 for processing
-Projects[PID]["GPIOEnabled"][8]      = 1; // Enable (1) or Disable (0) GPIO pin 8 for processing
-Projects[PID]["GPIOEnabled"][9]      = 1; // Enable (1) or Disable (0) GPIO pin 9 for processing
-Projects[PID]["GPIOEnabled"][10]     = 1; // Enable (1) or Disable (0) GPIO pin 10 for processing
-Projects[PID]["GPIOEnabled"][11]     = 1; // Enable (1) or Disable (0) GPIO pin 11 for processing
-Projects[PID]["GPIOEnabled"][12]     = 1; // Enable (1) or Disable (0) GPIO pin 12 for processing
-Projects[PID]["GPIOEnabled"][13]     = 1; // Enable (1) or Disable (0) GPIO pin 13 for processing
-Projects[PID]["GPIOEnabled"][14]     = 1; // Enable (1) or Disable (0) GPIO pin 14 for processing
-Projects[PID]["GPIOEnabled"][15]     = 1; // Enable (1) or Disable (0) GPIO pin 15 for processing
-Projects[PID]["GPIOEnabled"][16]     = 1; // Enable (1) or Disable (0) GPIO pin 16 for processing
-Projects[PID]["GPIOEnabled"][17]     = 1; // Enable (1) or Disable (0) GPIO pin 17 for processing
-Projects[PID]["GPIOEnabled"][18]     = 1; // Enable (1) or Disable (0) GPIO pin 18 for processing
-Projects[PID]["GPIOEnabled"][19]     = 1; // Enable (1) or Disable (0) GPIO pin 19 for processing
-Projects[PID]["GPIOEnabled"][20]     = 1; // Enable (1) or Disable (0) GPIO pin 20 for processing
-Projects[PID]["GPIOEnabled"][21]     = 1; // Enable (1) or Disable (0) GPIO pin 21 for processing
-Projects[PID]["GPIOEnabled"][22]     = 1; // Enable (1) or Disable (0) GPIO pin 22 for processing
-Projects[PID]["GPIOEnabled"][23]     = 1; // Enable (1) or Disable (0) GPIO pin 23 for processing
-Projects[PID]["GPIOEnabled"][24]     = 1; // Enable (1) or Disable (0) GPIO pin 24 for processing
-Projects[PID]["GPIOEnabled"][25]     = 1; // Enable (1) or Disable (0) GPIO pin 25 for processing
-Projects[PID]["GPIOEnabled"][26]     = 1; // Enable (1) or Disable (0) GPIO pin 26 for processing
-Projects[PID]["GPIOEnabled"][27]     = 1; // Enable (1) or Disable (0) GPIO pin 27 for processing
+Projects[PID]["GPIOEnabled"][2]      = 1; // Enable (1) or Disable (0) GPIO pin 2
+Projects[PID]["GPIOEnabled"][3]      = 1; // Enable (1) or Disable (0) GPIO pin 3
+Projects[PID]["GPIOEnabled"][4]      = 1; // Enable (1) or Disable (0) GPIO pin 4
+Projects[PID]["GPIOEnabled"][5]      = 1; // Enable (1) or Disable (0) GPIO pin 5
+Projects[PID]["GPIOEnabled"][6]      = 1; // Enable (1) or Disable (0) GPIO pin 6
+Projects[PID]["GPIOEnabled"][7]      = 1; // Enable (1) or Disable (0) GPIO pin 7
+Projects[PID]["GPIOEnabled"][8]      = 1; // Enable (1) or Disable (0) GPIO pin 8
+Projects[PID]["GPIOEnabled"][9]      = 1; // Enable (1) or Disable (0) GPIO pin 9
+Projects[PID]["GPIOEnabled"][10]     = 1; // Enable (1) or Disable (0) GPIO pin 10
+Projects[PID]["GPIOEnabled"][11]     = 1; // Enable (1) or Disable (0) GPIO pin 11
+Projects[PID]["GPIOEnabled"][12]     = 1; // Enable (1) or Disable (0) GPIO pin 12
+Projects[PID]["GPIOEnabled"][13]     = 1; // Enable (1) or Disable (0) GPIO pin 13
+Projects[PID]["GPIOEnabled"][14]     = 1; // Enable (1) or Disable (0) GPIO pin 14
+Projects[PID]["GPIOEnabled"][15]     = 1; // Enable (1) or Disable (0) GPIO pin 15
+Projects[PID]["GPIOEnabled"][16]     = 1; // Enable (1) or Disable (0) GPIO pin 16
+Projects[PID]["GPIOEnabled"][17]     = 1; // Enable (1) or Disable (0) GPIO pin 17
+Projects[PID]["GPIOEnabled"][18]     = 1; // Enable (1) or Disable (0) GPIO pin 18
+Projects[PID]["GPIOEnabled"][19]     = 1; // Enable (1) or Disable (0) GPIO pin 19
+Projects[PID]["GPIOEnabled"][20]     = 1; // Enable (1) or Disable (0) GPIO pin 20
+Projects[PID]["GPIOEnabled"][21]     = 1; // Enable (1) or Disable (0) GPIO pin 21
+Projects[PID]["GPIOEnabled"][22]     = 1; // Enable (1) or Disable (0) GPIO pin 22
+Projects[PID]["GPIOEnabled"][23]     = 1; // Enable (1) or Disable (0) GPIO pin 23
+Projects[PID]["GPIOEnabled"][24]     = 1; // Enable (1) or Disable (0) GPIO pin 24
+Projects[PID]["GPIOEnabled"][25]     = 1; // Enable (1) or Disable (0) GPIO pin 25
+Projects[PID]["GPIOEnabled"][26]     = 1; // Enable (1) or Disable (0) GPIO pin 26
+Projects[PID]["GPIOEnabled"][27]     = 1; // Enable (1) or Disable (0) GPIO pin 27
 
 /**  End  **//************************************************************/
 ```
