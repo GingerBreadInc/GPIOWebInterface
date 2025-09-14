@@ -23,11 +23,10 @@ Homepage
 ![Home Light](DOCS/home_light.png) ![Home Dark](DOCS/home_dark.png)
 
 Project "Default"
-![GPIO Server 2](DOCS/GPIOServer_2.png)
+![Default Project Light](DOCS/default_light.png) ![Default Project Dark](DOCS/default_dark.png)
 
-
-Project "PiKVM"
-![GPIO Server 3](DOCS/GPIOServer_3.png)
+Project "Example"
+![Example Project Light](DOCS/example_light.png) ![Example Project Dark](DOCS/example_dark.png)
 
 
 ## Credits
