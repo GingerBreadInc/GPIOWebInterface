@@ -54,11 +54,16 @@ npm -v
 cd GPIOWebInterface
 npm init
 
-# name: RaspBerryDEV
-# version: 1.0.0
-# description: RaspBerry GPIO Test Board
-# license: MIT
-# type: commonjs
+# package name: (gpiowebinterface)
+# version: (1.0.0)
+# description: RaspBerry GPIO WebInterface
+# entry point: (webserver.js)
+# test command:
+# git repository:
+# keywords:
+# author:
+# license: (ISC) MIT
+# type: (commonjs)
 ```
 10. Install Modules
 ```bash
