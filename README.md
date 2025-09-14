@@ -1,6 +1,9 @@
 # GPIOWebInterface
 Raspberry Pi webserver to control GPIO using Node.JS
 
+## Description
+WebApp, Browserbased, customizable, multiple projects
+
 ## Requierements
 Tested with the following Components:
 - Raspberry Pi 3 (should also work with RPi 4)
@@ -25,4 +28,5 @@ The Installation and Configuration is quite easy. All you need is Raspberry Pi a
 
 
 ## Credits
-Thanks to StevesRandomProjects, this Project was inspired by <a href="https://github.com/StevesRandomProjects/PiGpioWebServer" target="_blank">StevesRandomProjects - PiGpioWebServer</a>
+Thanks to StevesRandomProjects.<br>This Project was inspired by <a href="https://github.com/StevesRandomProjects/PiGpioWebServer" target="_blank">StevesRandomProjects - PiGpioWebServer</a>.
+
