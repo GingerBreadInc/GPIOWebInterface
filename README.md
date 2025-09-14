@@ -1,4 +1,4 @@
-# GPIOWebInterface
+# GPIO WebInterface
 Raspberry Pi webserver to control GPIO using Node.JS
 
 ## Description
