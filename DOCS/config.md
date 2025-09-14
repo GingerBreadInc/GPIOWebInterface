@@ -132,7 +132,7 @@ var StartPageHeaderLogoCustom        = '';     // provide filename of custom Log
 var StartPageStyle                   = "Auto"; // Light | Dark | Auto
 var StartPageShowTemperature         = 1;      // Enable (1) or Disable (0) ShowTemperature
 ```
-### Projects
+### Project
 ```javascript
 /** Start **//********** Project 'default' Config ************************/
 

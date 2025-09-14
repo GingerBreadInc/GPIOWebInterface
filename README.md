@@ -11,7 +11,7 @@ Tested with the following Components:
 - Node JS 24.0.7
 
 ## Installation and Configuration
-The Installation and Configuration is quite easy. All you need is Raspberry Pi and a SD-Card with Pi OS Lite 64bit (Bookworm).
+The Installation and Configuration is quite easy. All you need is a Raspberry Pi and a SD-Card with Pi OS Lite 64bit (Bookworm).
 - <a href="DOCS/install.md">Installation</a>
 - <a href="DOCS/config.md">Configuration</a>
 
