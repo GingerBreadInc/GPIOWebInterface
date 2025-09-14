@@ -783,6 +783,7 @@ a:hover {
 	position: fixed;
 	bottom: 25px;
 	left: 25px;
+	font-size: 13px;
 	box-shadow: 1px 1px 5px 5px rgb(from var(--ColorBackground) r g b / 0.3), -1px 1px 5px 5px rgb(from var(--ColorBackground) r g b / 0.3), -1px -1px 5px 5px rgb(from var(--ColorBackground) r g b / 0.3), 1px -1px 5px 5px rgb(from var(--ColorBackground) r g b / 0.3);
 	background-color: rgb(from var(--ColorBackground) r g b / 0.75);
 
