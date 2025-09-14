@@ -16,7 +16,7 @@ sudo raspi-config
 ```
 3. Enable Remote GPIO
 ```bash
-systemctl enable pigpiod
+sudo systemctl enable pigpiod
 ```
 4. Prepare Installation
 ```bash
@@ -26,12 +26,12 @@ cd downloads
 5. Download Components
 ```bash
 wget https://nodejs.org/dist/v24.7.0/node-v24.7.0-linux-arm64.tar.xz
-wget https://github.com/GingerBreadInc/GPIOServer/archive/main.zip
+wget https://github.com/GingerBreadInc/GPIOWebInterface/archive/main.zip
 ```
 6. Extract Components
 ```bash
 tar -xvf node-v24.7.0-linux-arm64.tar.xz
-unzip GPIOServer-main.zip
+unzip main.zip
 ```
 7. Copy Components
 ```bash
@@ -91,8 +91,8 @@ WantedBy=multi-user.target
 ```
 13. Enable Service
 ```bash
-systemctl daemon-reload
-systemctl start gpiowebinterface.service
-systemctl status gpiowebinterface.service
-systemctl enable gpiowebinterface.service
+sudo systemctl daemon-reload
+sudo systemctl start gpiowebinterface.service
+sudo systemctl status gpiowebinterface.service
+sudo systemctl enable gpiowebinterface.service
 ```
