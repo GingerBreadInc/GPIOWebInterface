@@ -1,5 +1,5 @@
 # Installation
-All you need is a  Raspberry Pi 3 and a fresh SD-Card with Raspberry Pi OS Lite 64bit (Bookworm).
+All you need is a Raspberry Pi 3 and a fresh SD-Card with Raspberry Pi OS Lite 64bit (Bookworm) with enabled ssh.
 
 1. Update System
 ```bash
@@ -9,11 +9,7 @@ sudo apt dist-upgrade -y
 ```
 2. Edit Raspi-Config
 ```bash
-sudo raspi-config
-
-# Advanced Options -> Expand Filesystem
-
-reboot
+sudo raspi-config noint do_expand_rootfs
 ```
 3. Enable Remote GPIO
 ```bash
@@ -108,4 +104,17 @@ sudo systemctl enable gpiowebinterface.service
 ```bash
 cd ~
 rm -rf downloads/*
+```
+### (Optional) ReadOnly Filessystem to protect the SD Card
+Enable Read Only Mode
+```bash
+sudo raspi-config noint enable_overlayfs
+sudo raspi-config noint enable_bootro
+reboot
+```
+Disable Read Only Mode
+```bash
+sudo raspi-config noint disable_overlayfs
+sudo raspi-config noint disable_bootro
+reboot
 ```
