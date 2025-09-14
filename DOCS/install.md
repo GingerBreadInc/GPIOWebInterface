@@ -9,7 +9,7 @@ sudo apt dist-upgrade -y
 ```
 2. Edit Raspi-Config
 ```bash
-sudo raspi-config noint do_expand_rootfs
+sudo raspi-config nonint do_expand_rootfs
 ```
 3. Enable Remote GPIO
 ```bash
@@ -108,13 +108,13 @@ rm -rf downloads/*
 ### (Optional) ReadOnly Filessystem to protect the SD Card
 Enable Read Only Mode
 ```bash
-sudo raspi-config noint enable_overlayfs
-sudo raspi-config noint enable_bootro
+sudo raspi-config nonint enable_overlayfs
+sudo raspi-config nonint enable_bootro
 reboot
 ```
 Disable Read Only Mode
 ```bash
-sudo raspi-config noint disable_overlayfs
-sudo raspi-config noint disable_bootro
+sudo raspi-config nonint disable_overlayfs
+sudo raspi-config nonint disable_bootro
 reboot
 ```
