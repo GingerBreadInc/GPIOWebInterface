@@ -10,6 +10,7 @@ sudo apt dist-upgrade -y
 2. Edit Raspi-Config
 ```bash
 sudo raspi-config nonint do_expand_rootfs
+reboot
 ```
 3. Enable Remote GPIO
 ```bash
