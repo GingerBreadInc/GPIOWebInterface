@@ -1,7 +1,7 @@
 # Configuration
 You can configure and costumize the Start Page and one or more Projects.
 
-It is also possible to disable GPIO pins on server site. This is important if you use HATs like Geekworm KVM-A3 or similar, because all enabled pins are set automatically to 'OUTPUT' by the webserver. If you disable a pin her, the toggles an buttons will be also disabled on the project sites.
+It is also possible to disable GPIO pins on server site. This is important if you use HATs like Geekworm KVM-A3 or similar, because all enabled pins are set automatically to 'OUTPUT' by the webserver. If you disable a pin on server side, the toggles an buttons will be also disabled on the project sites.
 
 ## webserver.js
 This is the Node.JS Webserver and can be found in the root. Here you can set some Variables to customize the Server behavior.
