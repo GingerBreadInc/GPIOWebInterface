@@ -44,7 +44,7 @@ cd ..
 node -v
 # v24.7.0
 npm -v
-# 11.5.0
+# 11.5.1
 ```
 9. Prepare GPIO Webinterface
 ```bash
@@ -116,6 +116,8 @@ sudo reboot
 Disable Read Only Mode
 ```bash
 sudo raspi-config nonint disable_overlayfs
+sudo reboot
+
 sudo raspi-config nonint disable_bootro
 sudo reboot
 ```

@@ -15,7 +15,8 @@ The Installation and Configuration is quite easy. All you need is a Raspberry Pi
 - <a href="DOCS/install.md">Installation</a>
 - <a href="DOCS/config.md">Configuration</a>
 
-After you have successfully installed and configured the server, the webinterface should be reachable under: http://[IP or FQDN of your pi]
+After you have successfully installed and configured the server, the webinterface should be reachable under:<br>
+http://[IP or FQDN of your pi]
 
 ## Screenshots
 Homepage
