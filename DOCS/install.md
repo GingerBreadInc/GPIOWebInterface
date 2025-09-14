@@ -10,7 +10,7 @@ sudo apt dist-upgrade -y
 2. Edit Raspi-Config
 ```bash
 sudo raspi-config nonint do_expand_rootfs
-reboot
+sudo reboot
 ```
 3. Enable Remote GPIO
 ```bash
@@ -111,11 +111,11 @@ Enable Read Only Mode
 ```bash
 sudo raspi-config nonint enable_overlayfs
 sudo raspi-config nonint enable_bootro
-reboot
+sudo reboot
 ```
 Disable Read Only Mode
 ```bash
 sudo raspi-config nonint disable_overlayfs
 sudo raspi-config nonint disable_bootro
-reboot
+sudo reboot
 ```
