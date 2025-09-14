@@ -1,7 +1,7 @@
 # Configuration
 You can configure and costumize the Start Page and one or more Projects.
 
-It is also possible to disable GPIO pins on server site. This important if you use HATs like Geekworm KVM-A3 or similar, because all enabled pins are set automatically to OUTPUT by the webserver.
+It is also possible to disable GPIO pins on server site. This important if you use HATs like Geekworm KVM-A3 or similar, because all enabled pins are set automatically to 'OUTPUT' by the webserver.
 
 ## webserver.js
 This is the Node.JS Webserver and can be found in the root. Here you can set some Variables to customize the Server behavior.
@@ -141,9 +141,9 @@ Projects[PID]["BGImageCustom"]       = '';     // provide filename of custom Bac
 Projects[PID]["BGImageOpacity"]      = "7";    // Background Image Opacity in %
 Projects[PID]["BGImageBlur"]         = 0;      // Enable (1) or Disable (0) Background-Image Blur
 Projects[PID]["LoadingImageCustom"]  = '';     // provide filename of custom loading Image, leave blank for default image
+Projects[PID]["Style"]               = "Auto"; // Light | Dark | Auto
 Projects[PID]["ShowTemperature"]     = 1;      // Enable (1) or Disable (0) ShowTemperature
 
-Projects[PID]["Style"]               = "Auto"; // Light | Dark | Auto
 
 // Here you can enable/disable GPIOs, thats only for showing toggles and
 // Buttons for the GPIOs on the Page.
