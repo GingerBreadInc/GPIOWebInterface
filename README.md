@@ -18,8 +18,8 @@ The Installation and Configuration is quite easy. All you need is a Raspberry Pi
 After you have successfully installed and configured the server, the webinterface should be reachable under:<br>
 http://[IP or FQDN of your pi]
 
-### Screenshots
-###Homepage
+## Screenshots
+### Start Page
 ![Home Light](DOCS/home_light.png) ![Home Dark](DOCS/home_dark.png)
 
 ### Project "Default"
