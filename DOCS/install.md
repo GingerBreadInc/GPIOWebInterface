@@ -18,6 +18,7 @@ reboot
 3. Enable Remote GPIO
 ```bash
 sudo systemctl enable pigpiod
+sudo systemctl start pigpiod
 ```
 4. Prepare Installation
 ```bash
