@@ -47,7 +47,7 @@ cd ..
 node -v
 # v24.7.0
 npm -v
-# 11.5.2
+# 11.5.0
 ```
 9. Prepare GPIO Webinterface
 ```bash
@@ -75,7 +75,7 @@ npm install socket.io --save
 11. Enable lower Port (<1024) for WebServer
 ```bash
 sudo apt update
-sudo apt install libcap2-bin
+sudo apt install libcap2-bin -y
 sudo setcap cap_net_bind_service=+ep /usr/local/bin/node
 ```
 12. Create Service
