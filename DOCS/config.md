@@ -1,15 +1,18 @@
 # Configuration
 You can configure and costumize the Start Page and one or more Projects.
 
-It is also possible to disable GPIO pins on server site. This is important if you use HATs like Geekworm KVM-A3 or similar, because all enabled pins are set automatically to 'OUTPUT' by the webserver.
+It is also possible to disable GPIO pins on server site. This is important if you use HATs like Geekworm KVM-A3 or similar, because all enabled pins are set automatically to 'OUTPUT' by the webserver. If you disable a pin her, the toggles an buttons will be also disabled on the project sites.
 
 ## webserver.js
 This is the Node.JS Webserver and can be found in the root. Here you can set some Variables to customize the Server behavior.
 
+### Base Settings
 ```JavaScript
 const WebPort          = 80;      // HTTP Server Port
 var   SetDefaultValues = 0;       // 0 - Read GPIO Status | 1 - Set Default Values
 ```
+
+### Disable Pins
 ```JavaScript
 // Here you can really enable/disable GPIOs for processing, its
 // important when you use a HAT like GeekWorm KVM-A3 or something else,
@@ -42,6 +45,8 @@ GPIOEnabled[25] = 1; // Enable (1) or Disable (0) GPIO pin 25 for processing
 GPIOEnabled[26] = 1; // Enable (1) or Disable (0) GPIO pin 26 for processing
 GPIOEnabled[27] = 1; // Enable (1) or Disable (0) GPIO pin 27 for processing
 ```
+
+### Pin Mapping
 ```JavaScript
 // GPIO mapping: cat /sys/kernel/debug/gpio
 
@@ -72,6 +77,8 @@ if (GPIOEnabled[25] === 1) { GPIOMapping[25] = 537; } // Map GPIO pin 25
 if (GPIOEnabled[26] === 1) { GPIOMapping[26] = 538; } // Map GPIO pin 26
 if (GPIOEnabled[27] === 1) { GPIOMapping[27] = 539; } // Map GPIO pin 27
 ```
+
+### Pin Default Values
 ```JavaScript
 // GPIO Default Values
 
