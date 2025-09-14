@@ -2,10 +2,7 @@
 Raspberry Pi webserver to control GPIO using Node.JS
 
 ## Description
-This is a Hobby-Project to easy switch the GPIOs on a Raspberry Pi by browser, without knowing of scripting like python or similar.<br>
-It is customizable and you can use it as WebApp (tested with iOS) or tradtional Browser.<br>
-You can simple add Projects with different settings, styles and Background-images.<br>
-It supports Dark and Light mode.
+This is a Hobby-Project to easy switch the GPIOs on a Raspberry Pi by browser, without knowing of scripting like python or similar. It is customizable and you can use it as WebApp (tested with iOS) or tradtional Browser. You can simple add Projects with different settings, styles and Background-images. It supports Dark and Light mode.
 
 ## Requierements
 Tested with the following Components:
