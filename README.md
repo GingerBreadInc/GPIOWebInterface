@@ -20,7 +20,7 @@ http://[IP or FQDN of your pi]
 
 ## Screenshots
 Homepage
-![GPIO Server 1](DOCS/GPIOServer_1.png)
+![Home Light](DOCS/home_light.png)
 
 Project "Default"
 ![GPIO Server 2](DOCS/GPIOServer_2.png)
