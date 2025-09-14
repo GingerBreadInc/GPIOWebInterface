@@ -1,17 +1,28 @@
 # GPIOWebInterface
 Raspberry Pi webserver to control GPIO using Node.JS
 
-Homepage
+## Requierements
+Tested with the following Components:
+- Raspberry Pi 3 (should also work with RPi 4)
+- Raspberry Pi OS Lite 64bit (Bookworm)
+- Node JS 24.0.7
 
-![Screenshot of GPIOServer (1)](https://github.com/GingerBreadInc/GPIOWebInterface/blob/main/DOCS/GPIOServer_1.png)
+## Screenshots
+Homepage
+![GPIO Server 1](DOCS/GPIOServer_1.png)
 
 Project "Default"
+![GPIO Server 2](DOCS/GPIOServer_2.png)
 
-![Screenshot of GPIOServer (2)](https://github.com/GingerBreadInc/GPIOWebInterface/blob/main/DOCS/GPIOServer_2.png)
 
 Project "PiKVM"
+![GPIO Server 3](DOCS/GPIOServer_3.png)
 
-![Screenshot of GPIOServer (3)](https://github.com/GingerBreadInc/GPIOWebInterface/blob/main/DOCS/GPIOServer_3.png)
+## Installation and Configuration
+The Installation and Configuration is quite easy. All you need is Raspberry Pi and a SD-Card with Pi OS Lite 64bit (Bookworm).
+- <a href="DOCS/install.md">Installation</a>
+- <a href="DOCS/config.md">Configuration</a>
 
 
-Inspired by https://github.com/StevesRandomProjects/PiGpioWebServer
+## Credits
+Thanks to StevesRandomProjects, this Project was inspired by <a href="https://github.com/StevesRandomProjects/PiGpioWebServer" target="_blank">StevesRandomProjects - PiGpioWebServer</a>
