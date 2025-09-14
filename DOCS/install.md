@@ -97,21 +97,16 @@ sudo systemctl enable gpiowebinterface.service
 ```
 14. Cleanup
 ```bash
-cd ~
-rm -rf downloads/*
+rm -rf ~/downloads/* && cd ~
 ```
 ### (Optional) ReadOnly Filessystem to protect the SD Card
 Enable Read Only Mode
 ```bash
-sudo raspi-config nonint enable_overlayfs
-sudo raspi-config nonint enable_bootro
-sudo reboot
+sudo raspi-config nonint enable_overlayfs && sudo raspi-config nonint enable_bootro && sudo reboot
 ```
 Disable Read Only Mode
 ```bash
-sudo raspi-config nonint disable_overlayfs
-sudo reboot
+sudo raspi-config nonint disable_overlayfs && sudo reboot
 
-sudo raspi-config nonint disable_bootro
-sudo reboot
+sudo raspi-config nonint disable_bootro && sudo reboot
 ```
