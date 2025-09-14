@@ -5,7 +5,7 @@ All you need is a Raspberry Pi 3 and a fresh SD-Card with Raspberry Pi OS Lite 6
 ```bash
 sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
 ```
-2. Expand Root FS to full size
+2. Expand filesystem to full size of SD-Card
 ```bash
 sudo raspi-config nonint do_expand_rootfs && sudo reboot
 ```
