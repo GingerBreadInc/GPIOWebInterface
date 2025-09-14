@@ -37,6 +37,7 @@ unzip main.zip
 ```
 7. Copy Components
 ```bash
+mkdir ~/GPIOWebInterface
 sudo cp -r ~/downloads/node-v24.7.0-linux-arm64/* /usr/local/
 cp -r ~/downloads/GPIOWebInterface-main/* ~/GPIOWebInterface/
 cd ..
