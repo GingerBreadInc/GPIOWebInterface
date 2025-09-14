@@ -1,7 +1,7 @@
 # Configuration
 You can configure and costumize the Start Page and one or more Projects.
 
-It is also possible to disable GPIO pins on server site. This important if you use HATs like Geekworm KVM-A3 or similar, because all enabled pins are set automatically to 'OUTPUT' by the webserver.
+It is also possible to disable GPIO pins on server site. This is important if you use HATs like Geekworm KVM-A3 or similar, because all enabled pins are set automatically to 'OUTPUT' by the webserver.
 
 ## webserver.js
 This is the Node.JS Webserver and can be found in the root. Here you can set some Variables to customize the Server behavior.
@@ -106,8 +106,11 @@ if (GPIOEnabled[27] === 1) { GPIOvalue[27] = 0; } // Turn off GPIO 27 by default
 ## siteConfig.js
 This file can be found in 'public'. This file is for managing the Style and Projects.
 
+Here you can also disable the pins, but that's only for disabling toggles and buttons, not the pins them self.
+
 If you want to add more Projects, simply copy the Part between 'Start' and 'End' under the exiting Project.
 
+### Start Page
 ```javascript
 // StartPage
 var StartPageTitle                   = "RaspBerry Pi Test Board";
@@ -122,6 +125,7 @@ var StartPageHeaderLogoCustom        = '';     // provide filename of custom Log
 var StartPageStyle                   = "Auto"; // Light | Dark | Auto
 var StartPageShowTemperature         = 1;      // Enable (1) or Disable (0) ShowTemperature
 ```
+### Projects
 ```javascript
 /** Start **//********** Project 'default' Config ************************/
 
