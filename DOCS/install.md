@@ -11,8 +11,9 @@ sudo apt dist-upgrade -y
 ```bash
 sudo raspi-config
 
-# System Options -> Network at Boot -> yes
 # Advanced Options -> Expand Filesystem
+
+reboot
 ```
 3. Enable Remote GPIO
 ```bash
