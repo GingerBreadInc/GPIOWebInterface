@@ -25,7 +25,7 @@ http://[IP or FQDN of your pi]
 ### Project "Default"
 ![Default Project Light](DOCS/default_light.png) ![Default Project Dark](DOCS/default_dark.png)
 
-### Project "Example"
+### Project "PiKVM"
 ![Example Project Light](DOCS/example_light.png) ![Example Project Dark](DOCS/example_dark.png)
 
 
