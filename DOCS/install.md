@@ -9,7 +9,7 @@ sudo apt dist-upgrade -y
 ```
 2. Edit Raspi-Config
 ```bash
-raspi-config
+sudo raspi-config
 
 # System Options -> Network at Boot -> yes
 # Advanced Options -> Expand Filesystem
