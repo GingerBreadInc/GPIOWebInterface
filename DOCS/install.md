@@ -59,9 +59,9 @@ npm init
 ```
 10. Install Modules
 ```bash
-npm install onoff
 npm install --save-optional utf-8-validate
 npm install --save-optional bufferutil
+npm install onoff
 npm install socket.io --save
 ```
 11. Enable lower Port (<1024) for WebServer
@@ -80,8 +80,8 @@ sudo nano /etc/systemd/system/gpiowebinterface.service
 Description=GPIO WebInterface
 After=network.target
 [Service]
-ExecStart=node /home/<User>/GPIOServer/webserver.js
-WorkingDirectory=/home/<User>/GPIOServer
+ExecStart=node /home/<User>/GPIOWebInterface/webserver.js
+WorkingDirectory=/home/<User>/GPIOWebInterface
 StandardOutput=inherit
 StandardError=inherit
 Restart=always
