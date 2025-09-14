@@ -43,9 +43,9 @@ Projects[PID]["BGImageCustom"]       = '';     // provide filename of custom Bac
 Projects[PID]["BGImageOpacity"]      = "7";    // Background Image Opacity in %
 Projects[PID]["BGImageBlur"]         = 0;      // Enable (1) or Disable (0) Background-Image Blur
 Projects[PID]["LoadingImageCustom"]  = '';     // provide filename of custom loading Image, leave blank for default image
+Projects[PID]["Style"]               = "Auto"; // Light | Dark | Auto
 Projects[PID]["ShowTemperature"]     = 1;      // Enable (1) or Disable (0) ShowTemperature
 
-Projects[PID]["Style"]               = "Auto"; // Light | Dark | Auto
 
 // Here you can enable/disable GPIOs, thats only for showing toggles and
 // Buttons for the GPIOs on the Page.
@@ -100,9 +100,9 @@ Projects[PID]["BGImageCustom"]       = '';     // provide filename of custom Bac
 Projects[PID]["BGImageOpacity"]      = "7";    // Background Image Opacity in %
 Projects[PID]["BGImageBlur"]         = 0;      // Enable (1) or Disable (0) Background-Image Blur
 Projects[PID]["LoadingImageCustom"]  = '';     // provide filename of custom loading Image, leave blank for default image
+Projects[PID]["Style"]               = "Auto"; // Light | Dark | Auto
 Projects[PID]["ShowTemperature"]     = 1;      // Enable (1) or Disable (0) ShowTemperature
 
-Projects[PID]["Style"]               = "Auto"; // Light | Dark | Auto
 
 // Here you can enable/disable GPIOs, thats only for showing toggles and
 // Buttons for the GPIOs on the Page.
@@ -159,9 +159,9 @@ Projects[PID]["BGImageCustom"]       = 'KVM-A3.png'; // provide filename of cust
 Projects[PID]["BGImageOpacity"]      = "7";    // Background Image Opacity in %
 Projects[PID]["BGImageBlur"]         = 0;      // Enable (1) or Disable (0) Background-Image Blur
 Projects[PID]["LoadingImageCustom"]  = '';     // provide filename of custom loading Image, leave blank for default image
+Projects[PID]["Style"]               = "Auto"; // Light | Dark | Auto
 Projects[PID]["ShowTemperature"]     = 1;      // Enable (1) or Disable (0) ShowTemperature
 
-Projects[PID]["Style"]               = "Auto"; // Light | Dark | Auto
 
 // Here you can enable/disable GPIOs, thats only for showing toggles and
 // Buttons for the GPIOs on the Page.

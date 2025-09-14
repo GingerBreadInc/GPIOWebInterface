@@ -2,8 +2,6 @@
 /****** Base Config ****************************************************/
 
 const WebPort          = 80;      // HTTP Server Port
-var   GPIOName         = "GPIO";  // See siteconfig.js - has to be the same!
-var   GPIONameT        = "TGPIO"; // See siteconfig.js - has to be the same!
 var   SetDefaultValues = 0;       // 0 - Read GPIO Status | 1 - Set Default Values
 
 /* if you want to run WebPort on a port lower than 1024 without running
@@ -49,8 +47,6 @@ GPIOEnabled[27] = 1; // Enable (1) or Disable (0) GPIO pin 27 for processing
 
 /****** VARIABLES ******************************************************/
 
-var ServerConfig = "public/js/serverConfig.js";
-var TempState    = "public/js/tempState.js";
 var GPIOvalue    = {};
 var GPIOMapping  = {};
 var GPIOFunction = {};
@@ -117,6 +113,11 @@ if (GPIOEnabled[27] === 1) { GPIOvalue[27] = 0; } // Turn off GPIO 27 by default
 /*<#####################################################################>*/
 /*<#####################| /!\  Don't Touch!  /!\ |######################>*/
 /*<#####################################################################>*/
+
+var GPIOName     = "GPIO";  // See siteconfig.js - has to be the same!
+var PIONameT     = "TGPIO"; // See siteconfig.js - has to be the same!
+var ServerConfig = "public/js/serverConfig.js";
+var TempState    = "public/js/tempState.js";
 
 /*************** Load Moudles and Variables ***************************/
 
