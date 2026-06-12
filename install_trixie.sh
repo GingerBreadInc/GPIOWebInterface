@@ -34,6 +34,7 @@ echo "# license: (ISC) MIT"
 echo "# type: (commonjs)"
 echo "##################################################"
 echo " Press Enter on each point and finally type 'yes'"
+echo "##################################################"
 cd GPIOWebInterface
 npm init
 npm install --save-optional utf-8-validate
