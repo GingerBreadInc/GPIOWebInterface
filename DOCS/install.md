@@ -9,7 +9,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
 ```bash
 sudo raspi-config nonint do_expand_rootfs && sudo reboot
 ```
-3. Enable Remote GPIO
+3. Enable Remote GPIO (only Bookworm and below)
 ```bash
 sudo systemctl enable pigpiod && sudo systemctl start pigpiod
 ```
@@ -27,6 +27,10 @@ wget https://github.com/GingerBreadInc/GPIOWebInterface/archive/main.zip
 ```bash
 tar -xvf node-v24.7.0-linux-arm64.tar.xz
 unzip main.zip
+```
+6.1. Enable Remote GPIO ( only Trixie and up)
+```bash
+wget https://github.com/GingerBreadInc/GPIOWebInterface/archive/main.zip
 ```
 7. Copy Components
 ```bash
