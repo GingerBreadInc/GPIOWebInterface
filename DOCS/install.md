@@ -107,7 +107,7 @@ rm -rf ~/downloads/* && cd ~
 ```
 15. Finally
 ```bash
-reboot
+sudo reboot
 ```
 ### (Optional) ReadOnly Filessystem to protect the SD Card
 Enable Read Only Mode
