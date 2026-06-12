@@ -1,6 +1,6 @@
 sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
 sudo raspi-config nonint do_expand_rootfs
-mkdir ~/downloads
+mkdir -p ~/downloads
 cd ~/downloads
 wget https://nodejs.org/dist/v24.7.0/node-v24.7.0-linux-arm64.tar.xz
 wget https://github.com/GingerBreadInc/GPIOWebInterface/archive/main.zip
@@ -12,7 +12,7 @@ sudo systemctl enable pigpiod && sudo systemctl start pigpiod
 #chmod +x enable_rgpio.sh
 #sudo ./enable_rgpio.sh
 #cd ..
-mkdir ~/GPIOWebInterface
+mkdir -p ~/GPIOWebInterface
 sudo cp -r ~/downloads/node-v24.7.0-linux-arm64/* /usr/local/
 cp -r ~/downloads/GPIOWebInterface-main/* ~/GPIOWebInterface/
 cd ..
