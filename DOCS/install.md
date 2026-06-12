@@ -1,7 +1,7 @@
 # Installation
 All you need is a Raspberry Pi 3/4 and a fresh SD-Card with Raspberry Pi OS Lite 64bit (Bookworm/Trixie) with enabled ssh.
 
-## Automatic Install
+### Automatic Install
 1. Download Install Script
    Bookworm:
 ```bash
@@ -32,7 +32,7 @@ chmod +x install_trixie.sh
 sudo reboot
 ```
    
-## Manual Install
+### Manual Install
 1. Update System
 ```bash
 sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
