@@ -3,7 +3,6 @@ All you need is a Raspberry Pi 3/4 and a fresh SD-Card with Raspberry Pi OS Lite
 
 ### Automatic Install
 1. Download Install Script
-   Bookworm:
 ```bash
 # Bookworm
 wget https://github.com/GingerBreadInc/GPIOWebInterface/archive/main.zip
@@ -31,6 +30,7 @@ chmod +x install_trixie.sh
 ```bash
 sudo reboot
 ```
+
    
 ### Manual Install
 1. Update System
