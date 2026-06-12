@@ -1,6 +1,6 @@
 apt install -y python3-setuptools python3-full
-wget https://github.com/joan2937/pigpio/archive/refs/tags/v79.tar.gz
-tar zxf v79.tar.gz
+wget https://github.com/GingerBreadInc/PiGPIO/raw/refs/heads/main/pigpio-79.tar.gz
+tar zxf pigpio-79.tar.gz
 cd pigpio-79
 make
 make install
@@ -51,9 +51,12 @@ else
   echo "${DOLLAR}{PIGPIOD_SERVICE} already exists. I refuse to change it."
 fi
 EOF
+
 chmod 755 config_pigpiod_service.sh
 ./config_pigpiod_service.sh
 rm -f config_pigpiod_service.sh
 
 systemctl daemon-reload
 systemctl enable --now pigpiod
+
+rm -rf pigpio-79
