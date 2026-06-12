@@ -28,9 +28,9 @@ unzip main.zip
 ```bash
 sudo systemctl enable pigpiod && sudo systemctl start pigpiod
 ```
-6. (b) Enable Remote GPIO ( only Trixie and up)
+6. (b) Enable Remote GPIO (only Trixie and up)
 ```bash
-wget https://github.com/GingerBreadInc/GPIOWebInterface/archive/main.zip
+./enable_rgpio.sh
 ```
 7. Copy Components
 ```bash
