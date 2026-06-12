@@ -59,6 +59,6 @@ rm -f config_pigpiod_service.sh
 sudo systemctl daemon-reload
 sudo systemctl enable --now pigpiod
 
-rm -rf pigpio-79
+rm -rf pigpio-79*
 
 cd ..
