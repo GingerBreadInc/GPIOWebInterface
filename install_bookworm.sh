@@ -57,8 +57,10 @@ EOF
 
 sudo nano /etc/systemd/system/gpiowebinterface.service
 sudo systemctl daemon-reload
-sudo systemctl start gpiowebinterface.service
-sudo systemctl status gpiowebinterface.service
+#sudo systemctl start gpiowebinterface.service
+#sudo systemctl status gpiowebinterface.service
 sudo systemctl enable gpiowebinterface.service
 
 rm -rf ~/downloads/* && cd ~
+
+sudo reboot
