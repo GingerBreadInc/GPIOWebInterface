@@ -24,11 +24,11 @@ wget https://github.com/GingerBreadInc/GPIOWebInterface/archive/main.zip
 tar -xvf node-v24.7.0-linux-arm64.tar.xz
 unzip main.zip
 ```
-6. (a) Enable Remote GPIO (only Bookworm and below)
+6. (a) Enable Remote GPIO *(only Bookworm and below)*
 ```bash
 sudo systemctl enable pigpiod && sudo systemctl start pigpiod
 ```
-6. (b) Enable Remote GPIO (only Trixie and up)
+6. (b) Enable Remote GPIO *(only Trixie and up)*
 ```bash
 chmod +x enable_rgpio.sh
 ./enable_rgpio.sh
