@@ -26,7 +26,7 @@ sudo ./install_bookworm.sh
 # Trixie
 sudo ./install_trixie.sh
 ```
-
+If something will not work, rerun the script after a reboot.
    
 ### Manual Install
 1. Update System
