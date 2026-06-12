@@ -21,10 +21,10 @@ chmod +x install_trixie.sh
 3. Run Script
 ```bash
 # Bookworm
-./install_bookworm.sh
+sudo ./install_bookworm.sh
 
 # Trixie
-./install_trixie.sh
+sudo ./install_trixie.sh
 ```
 4. Reboot System
 ```bash
