@@ -39,7 +39,7 @@ sudo raspi-config nonint do_expand_rootfs && sudo reboot
 ```
 3. Prepare Installation
 ```bash
-mkdir ~/downloads
+mkdir -p ~/downloads
 cd ~/downloads
 ```
 4. Download Components
@@ -65,7 +65,7 @@ cd ..
 ```
 7. Copy Components
 ```bash
-mkdir ~/GPIOWebInterface
+mkdir -p ~/GPIOWebInterface
 sudo cp -r ~/downloads/node-v24.7.0-linux-arm64/* /usr/local/
 cp -r ~/downloads/GPIOWebInterface-main/* ~/GPIOWebInterface/
 cd ..
