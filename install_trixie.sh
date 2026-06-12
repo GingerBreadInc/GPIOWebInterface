@@ -21,7 +21,7 @@ node -v
 # v24.7.0
 npm -v
 # 11.5.1
-echo "###########################################"
+echo "#####[EXAMPLE]####################################"
 echo "# package name: (gpiowebinterface)"
 echo "# version: (1.0.0)"
 echo "# description: RaspBerry GPIO WebInterface"
@@ -32,7 +32,8 @@ echo "# keywords:"
 echo "# author:"
 echo "# license: (ISC) MIT"
 echo "# type: (commonjs)"
-echo "###########################################"
+echo "##################################################"
+echo " Press Enter on each point and finally type 'yes'"
 cd GPIOWebInterface
 npm init
 npm install --save-optional utf-8-validate
