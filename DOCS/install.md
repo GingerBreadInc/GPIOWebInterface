@@ -1,5 +1,5 @@
 # Installation
-All you need is a Raspberry Pi 3 and a fresh SD-Card with Raspberry Pi OS Lite 64bit (Bookworm) with enabled ssh.
+All you need is a Raspberry Pi 3/4 and a fresh SD-Card with Raspberry Pi OS Lite 64bit (Bookworm/Trixie) with enabled ssh.
 
 1. Update System
 ```bash
