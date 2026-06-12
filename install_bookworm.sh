@@ -6,6 +6,7 @@ wget https://nodejs.org/dist/v24.7.0/node-v24.7.0-linux-arm64.tar.xz
 wget https://github.com/GingerBreadInc/GPIOWebInterface/archive/main.zip
 tar -xvf node-v24.7.0-linux-arm64.tar.xz
 unzip main.zip
+rm -f ~/downloads/GPIOWebInterface-main/install_*
 sudo systemctl enable pigpiod && sudo systemctl start pigpiod
 #cd GPIOWebInterface-main
 #chmod +x enable_rgpio.sh
