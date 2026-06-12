@@ -28,7 +28,7 @@ wget https://github.com/GingerBreadInc/GPIOWebInterface/archive/main.zip
 tar -xvf node-v24.7.0-linux-arm64.tar.xz
 unzip main.zip
 ```
-6.1. Enable Remote GPIO ( only Trixie and up)
+6.1 Enable Remote GPIO ( only Trixie and up)
 ```bash
 wget https://github.com/GingerBreadInc/GPIOWebInterface/archive/main.zip
 ```
