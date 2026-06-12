@@ -5,10 +5,10 @@ All you need is a Raspberry Pi 3/4 and a fresh SD-Card with Raspberry Pi OS Lite
 1. Download Install Script
 ```bash
 # Bookworm
-wget https://github.com/GingerBreadInc/GPIOWebInterface/archive/main.zip
+wget https://raw.githubusercontent.com/GingerBreadInc/GPIOWebInterface/refs/heads/main/install_bookworm.sh
 
 # Trixie
-wget https://github.com/GingerBreadInc/GPIOWebInterface/archive/main.zip
+wget https://raw.githubusercontent.com/GingerBreadInc/GPIOWebInterface/refs/heads/main/install_trixie.sh
 ```
 2. Prepare Script
 ```bash
