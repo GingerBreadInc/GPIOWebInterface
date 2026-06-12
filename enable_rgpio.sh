@@ -1,10 +1,10 @@
-apt install -y python3-setuptools python3-full
+sudo apt install -y python3-setuptools python3-full
 wget https://github.com/GingerBreadInc/PiGPIO/raw/refs/heads/main/pigpio-79.tar.gz
 tar zxf pigpio-79.tar.gz
 cd pigpio-79
 make
-make install
-Ldconfig
+sudo make install
+sudo Ldconfig
 cd ..
 
 # Credits: https://github.com/joan2937/pigpio/issues/632#issuecomment-3379034242
@@ -53,10 +53,10 @@ fi
 EOF
 
 chmod 755 config_pigpiod_service.sh
-./config_pigpiod_service.sh
+sudo ./config_pigpiod_service.sh
 rm -f config_pigpiod_service.sh
 
-systemctl daemon-reload
-systemctl enable --now pigpiod
+sudo systemctl daemon-reload
+sudo systemctl enable --now pigpiod
 
 rm -rf pigpio-79
