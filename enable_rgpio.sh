@@ -4,7 +4,7 @@ tar zxf pigpio-79.tar.gz
 cd pigpio-79
 make
 sudo make install
-sudo Ldconfig
+sudo ldconfig
 cd ..
 
 # Credits: https://github.com/joan2937/pigpio/issues/632#issuecomment-3379034242
