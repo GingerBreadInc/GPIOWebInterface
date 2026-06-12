@@ -6,7 +6,7 @@ This is a Hobby-Project to easy switch the GPIOs on a Raspberry Pi by browser, w
 
 ## Requierements
 Tested with the following Components:
-- Raspberry Pi 3 (should also work with RPi 4)
+- Raspberry Pi 3/4
 - Raspberry Pi OS Lite 64bit (Bookworm/Trixie)
 - Node JS 24.0.7
 
