@@ -61,6 +61,6 @@ sudo systemctl daemon-reload
 #sudo systemctl status gpiowebinterface.service
 sudo systemctl enable gpiowebinterface.service
 
-rm -rf ~/downloads/* && cd ~
+sudo rm -rf ~/downloads/* && cd ~
 
 sudo reboot
