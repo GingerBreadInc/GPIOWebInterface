@@ -31,7 +31,7 @@ sudo systemctl enable pigpiod && sudo systemctl start pigpiod
 6. (b) Enable Remote GPIO *(only Trixie and up)*
 ```bash
 chmod +x enable_rgpio.sh
-./enable_rgpio.sh
+sudo ./enable_rgpio.sh
 ```
 7. Copy Components
 ```bash
