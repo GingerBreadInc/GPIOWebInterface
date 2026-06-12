@@ -1,5 +1,5 @@
 # Configuration
-You can configure and costumize the Start Page and one or more Projects.
+You can configure and costumize the Start Page and add one or more Projects.
 
 It is also possible to disable GPIO pins on server site. This is important if you use HATs like Geekworm KVM-A3 or similar, because all enabled pins are set automatically to 'OUTPUT' by the webserver. If you disable a pin on server side, the toggles an buttons will be also disabled on the project sites.
 
