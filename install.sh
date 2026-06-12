@@ -38,11 +38,8 @@ npm install --save-optional bufferutil
 npm install onoff
 npm install socket.io --save
 sudo apt update && sudo apt install libcap2-bin -y && sudo setcap cap_net_bind_service=+ep /usr/local/bin/node
-
-
-
-# Replace <User> with yours
-
+sudo cat << EOF > /etc/systemd/system/gpiowebinterface.service
+# -> Replace <User> with yours! <-
 [Unit]
 Description=GPIO WebInterface
 After=network.target
@@ -55,6 +52,7 @@ Restart=always
 User=<User>
 [Install]
 WantedBy=multi-user.target
+EOF
 
 sudo nano /etc/systemd/system/gpiowebinterface.service
 sudo systemctl daemon-reload
