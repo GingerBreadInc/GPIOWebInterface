@@ -33,6 +33,7 @@ sudo systemctl enable pigpiod && sudo systemctl start pigpiod
 cd GPIOWebInterface-main
 chmod +x enable_rgpio.sh
 sudo ./enable_rgpio.sh
+cd ..
 ```
 7. Copy Components
 ```bash
