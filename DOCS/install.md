@@ -104,6 +104,10 @@ sudo systemctl enable gpiowebinterface.service
 ```bash
 rm -rf ~/downloads/* && cd ~
 ```
+15. Finally
+```bash
+reboot
+```
 ### (Optional) ReadOnly Filessystem to protect the SD Card
 Enable Read Only Mode
 ```bash
