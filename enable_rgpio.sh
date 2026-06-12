@@ -60,5 +60,5 @@ sudo systemctl daemon-reload
 sudo systemctl enable --now pigpiod
 
 rm -rf pigpio-79*
-
+rm enable_rgpio.sh
 cd ..
