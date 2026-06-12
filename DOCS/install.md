@@ -11,8 +11,8 @@ sudo raspi-config nonint do_expand_rootfs && sudo reboot
 ```
 3. Prepare Installation
 ```bash
-mkdir downloads
-cd downloads
+mkdir ~/downloads
+cd ~/downloads
 ```
 4. Download Components
 ```bash
